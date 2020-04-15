@@ -94,7 +94,8 @@ public class MinStack {
                     System.out.println(obj.getMin());
                     break;
                 default:
-                    System.out.println("invalid command");
+                    System.out.println("invalid command; closing program");
+                    sc.close();
             }
         }
     }

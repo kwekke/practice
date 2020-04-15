@@ -84,6 +84,7 @@ public class FindMaxLength {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String line = sc.nextLine();
+        sc.close();
         String[] tokens = line.split(" ");
         int[] array = new int[tokens.length];
         for (int i = 0; i < tokens.length; i++) {
