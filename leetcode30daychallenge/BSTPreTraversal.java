@@ -25,7 +25,7 @@ Divide and Conquer
 
 import java.util.*;
 
-public class PreorderTraversalBST {
+public class BSTPreTraversal {
     int index = 0;
 
     public TreeNode bstFromPreorderStack(int[] preorder) {

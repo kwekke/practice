@@ -10,7 +10,7 @@ Left parenthesis '(' must go before the corresponding right parenthesis ')'.
 An empty string is also valid.
 ==============================================================================================================
 
-1) One pass (greedy)
+1) One pass 
 Think of balancing the number of ( and ). With the inclusion of *, then can increase the number of +/-
 
 Initialise two counters l and r denoting the smallest and largest possible number of open left brackets
