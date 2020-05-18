@@ -8,6 +8,7 @@ Strings consists of lowercase English letters only and the length of both string
 The order of output does not matter.
 ================================================================================================================
 1) Sliding Window
+Keep count of alphabets' frequency.
 Time Complexity: O(26 N) = O(N)
 because length of array being compared to in the isSame method is of length 26, the number of alphabets
 Space Complexity: O(1)
@@ -26,16 +27,14 @@ public class AllAnagramsInString {
         }
 
         int i;
-        int j;
 
         int[] expectedCounts = new int[26];
+        int[] currentCounts = new int[26];
+
         for (i = 0; i < M; i++) {
             expectedCounts[p.charAt(i) - 'a']++;
-        }
-
-        int[] currentCounts = new int[26];
-        for (i = 0; i < M; i++) {
             currentCounts[s.charAt(i) - 'a']++;
+
         }
 
         for (i = 0; i < N - M; i++) {
