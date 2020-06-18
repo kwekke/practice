@@ -1,5 +1,3 @@
-import java.util.*;
-
 /*
 https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3291/
 Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
@@ -17,6 +15,9 @@ repeat until string has been completely ran through
 loop ends when finish iterating through at least one string, or if different chars are detected. 
 
 */
+
+import java.util.*;
+
 public class BackspaceStringCompare {
     public static boolean backspaceCompareStack(String S, String T) {
         Stack<Character> s1 = new Stack<>();
